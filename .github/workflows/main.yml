@@ -31,3 +31,6 @@ jobs:
         with :
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+          
+        run : docker build -t randowitz/devops_tp_final:test ./
+        run : docker push randowitz/devops_tp_final:test
