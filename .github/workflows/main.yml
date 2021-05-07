@@ -27,3 +27,7 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "devops-randowitz" #Must be unique in Heroku
           heroku_email: "antoinegeorges.connesson@gmail.com"
+      - uses : docker/lofin-action@v1
+        with :
+          username: ${{ secrets.randowitz }}
+          password: ${{ secrets.f5d7d579-0dec-4680-9d53-c1a628cf39dd }}
