@@ -29,5 +29,5 @@ jobs:
           heroku_email: "antoinegeorges.connesson@gmail.com"
       - uses : docker/lofin-action@v1
         with :
-          username: ${{ secrets.randowitz }}
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
